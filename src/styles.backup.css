@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   color-scheme: light;
   --bg-main: #f7f4ec;
   --bg-green: #eef6f3;
@@ -93,8 +93,8 @@ a { color: inherit; text-decoration: none; }
   height: 100%;
   pointer-events: none;
 }
-.wave-layer-a { animation: eegShift 5.5s ease-in-out infinite; transform-origin: center; }
-.wave-layer-b { animation: eegShiftReverse 5.2s ease-in-out infinite; transform-origin: center; }
+.wave-layer-a { animation: eegShift 9s ease-in-out infinite; transform-origin: center; }
+.wave-layer-b { animation: eegShiftReverse 8.5s ease-in-out infinite; transform-origin: center; }
 .note-layer { animation: floatSlow 6.2s ease-in-out infinite; }
 .hero-text,
 .hero-card { position: relative; z-index: 2; }
@@ -276,15 +276,15 @@ a { color: inherit; text-decoration: none; }
 }
 @keyframes eegShift {
   0%, 100% { transform: translateX(0px) translateY(0px) scaleY(1); }
-  25% { transform: translateX(-16px) translateY(6px) scaleY(1.03); }
-  50% { transform: translateX(-36px) translateY(-5px) scaleY(0.97); }
-  75% { transform: translateX(-18px) translateY(7px) scaleY(1.02); }
+  25% { transform: translateX(-10px) translateY(4px) scaleY(1.02); }
+  50% { transform: translateX(-24px) translateY(-3px) scaleY(0.985); }
+  75% { transform: translateX(-12px) translateY(5px) scaleY(1.015); }
 }
 @keyframes eegShiftReverse {
   0%, 100% { transform: translateX(0px) translateY(0px) scaleY(1); }
-  25% { transform: translateX(14px) translateY(-6px) scaleY(0.985); }
-  50% { transform: translateX(34px) translateY(7px) scaleY(1.03); }
-  75% { transform: translateX(16px) translateY(-5px) scaleY(0.99); }
+  25% { transform: translateX(8px) translateY(-4px) scaleY(0.99); }
+  50% { transform: translateX(22px) translateY(5px) scaleY(1.02); }
+  75% { transform: translateX(10px) translateY(-3px) scaleY(0.995); }
 }
 @keyframes floatSlow {
   0%,100% { transform: translateY(0px); opacity: 0.8; }
@@ -323,5 +323,3 @@ a { color: inherit; text-decoration: none; }
   .two-col-gap { grid-template-columns: 1fr; }
   .footer { width: min(1180px, calc(100% - 18px)); }
 }
-
-
